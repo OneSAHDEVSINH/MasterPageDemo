@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyApp.master.cs" Inherits="MasterPageDemo.MyApp" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        #first{
+            background-color:azure;
+        }
+    </style>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="w-auto fs-5 pe-5 h-auto" id="first">
+            <div class="row">
+                <div class="col-sm-6 text-center p-1">
+                    <asp:Label ID="lblPageHeader" CssClass="f3" runat="server" Text="Page" />
+                </div>
+                <div class="col-sm-6">
+                    <ul class="nav nav-pills justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">
+                                <asp:Label ID="lblUserName" Text="Sahdevsinh" runat="server" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid m-1">
+            <div class="row">
+                <div class="col-sm-2 bg-info-subtle border-sm border-1 rounded rounded-1 border-success-subtle h-auto">
+                    <ul class="nav flex-sm-column">
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link active" NavigateUrl="~/frmBootStrapDemo.aspx" Text="Bootstrap" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link active" NavigateUrl="~/frmCookies.aspx" Text="Simple Cookies" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link active" NavigateUrl="~/frmReadMultipleCookies.aspx" Text="Multiple Cookies" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link active" NavigateUrl="~/frmSetSessionDemo.aspx" Text="Set-Session" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link active" NavigateUrl="~/frmGetSession.aspx" Text="Get-session" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link active" NavigateUrl="~/frmSetEmployeeSession.aspx" Text="Set-Employee-Session" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link active" NavigateUrl="~/frmGetEmployeeSession.aspx" Text="Get-Employee-Session" runat="server" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-9 ms-sm-2 bg-secondary">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
