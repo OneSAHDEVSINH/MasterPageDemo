@@ -70,7 +70,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For questions, suggestions, or issues, please contact [OneSAHDEVSINH](https://github.com/OneSAHDEVSINH).
-
-## Acknowledgements
-- [Any libraries or tools you used]
-- [Any contributors or inspirations]
